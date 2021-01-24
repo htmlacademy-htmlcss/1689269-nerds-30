@@ -25,25 +25,62 @@
  </section>
  <main>
      <aside>
-     <section>
+       <form action="get">
+     <div>
          <p> Стоимость:</p>
-         <input type="range" min="0" max="15000" value="1000" step="1"></input>
+         <input type="range" min="0" max="15000" value="10000" step="1">
          <p> от<input type="number" max="14999" min="0" value="0"> до <input type="number" max="15000" min="0" value="15000"> </p>
-     </section>
-     <section>
-         <form action="get">Сетка:  
-             <input type="checkbox" name="a" id="adaptive" checked>
+     </div>
+     <div>
+         <p>Сетка:</p>  
+             <input type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
              <label for="adaptive">Адаптивная</label>
-             <input type="checkbox" name="a" id="fix">
+             <input type="radio" name="grid" id="fix" value="Фиксированная">
              <label for="fix">Фиксированная</label>
-             <input type="checkbox" name="a" id="rubber">
+             <input type="radio" name="grid" id="rubber" value="Резиновая">
              <label for="rubber">Резиновая</label>
-         </form>
-     </section>
-     <section>
-         
-     </section>
+     </div>
+     <div>
+         <p>Особенности:</p>
+            <input type="checkbox" name="features" value="Слайдер" checked>Слайдер
+            <input type="checkbox" name="features" value="Блок преимуществ">Блок преимуществ
+            <input type="checkbox" name="features" value="Новости" checked>Новости
+            <input type="checkbox" name="features" value="Галерея">Галерея
+            <input type="checkbox" name="features" value="Корзина">Корзина
+     </div>
+     <button>Показать</button>
+    </form>
 </aside>
+<section>
+    <div>
+        <span>Сортировать:</span>
+        <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
+            <li><img src="https://via.placeholder.com/150x100" alt="Стрелка вверх"></li>
+            <li><img src="https://via.placeholder.com/150x100" alt="Стрелка вниз"></li>
+        </ul>
+    </div>
+    <div>
+        <img src="https://via.placeholder.com/150x100" alt="Презентации">
+        <img src="https://via.placeholder.com/150x100" alt="Презентации">
+        <img src="https://via.placeholder.com/150x100" alt="Презентации">
+        <img src="https://via.placeholder.com/150x100" alt="Презентации">
+        <img src="https://via.placeholder.com/150x100" alt="Презентации">
+        <img src="https://via.placeholder.com/150x100" alt="Презентации">   
+    </div>
+    <div>
+        <nav aria-label="Каталолг">
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"> Следующая </a></li>
+            </ul>
+        </nav>   
+    </div>
+</section>
 </main>  
  <footer>
     <section>
