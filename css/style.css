@@ -74,29 +74,28 @@ border: none;
 font-size: 16px;
 line-height: 18px;
 }
-.button.red_bg{
+.red_bg{
   background-color: var(--special-red);
 }
-.button.green_bg{
+.green_bg{
   background-color: var(--spesial-green);
 }
-.button.yellow_bg{
+.yellow_bg{
   background-color: var(--special-yellow);
 }
-.button.red_bg a:hover,
-.button.red_bg a:focus{ background-color:var(--extra-red);}
+.red_bg a:hover,
+.red_bg a:focus{ background-color:var(--extra-red);}
 
-.button.green_bg a:hover,
-.button.green_bg a:focus{ background-color:var(--extra-green);}
+.green_bg a:hover,
+.green_bg a:focus{ background-color:var(--extra-green);}
 
-.button.yellow_bg a:hover,
-.button.yellow_bg a:focus{ background-color:var(--extra-yellow);}
+.yellow_bg a:hover,
+.yellow_bg a:focus{ background-color:var(--extra-yellow);}
 
 /*Main-header*/
 
 .main-header{
   background-color: var(--light-gray);
-
 }
 /*Main navigation*/
 
@@ -120,9 +119,11 @@ line-height: 18px;
 .nav-item{
   list-style: none;
   display: inline-block;
+  text-transform: uppercase;
 }
 .nav-cart{
   display: inline-block;
+  text-transform: uppercase;
 }
 .nav-items a,
 .nav-cart a{
@@ -156,8 +157,9 @@ line-height: 18px;
 .services-item{
   text-align: center;
   display: inline-block;
+  text-align: left;
 }
-.nav-items h3{
+.services-items h3{
   font-size: 24px;
   line-height: 30px;
 }
@@ -187,10 +189,12 @@ color: var(--basic-black);
 }
 .advantages-list{
   list-style: none;
+
 }
 .advantages-item{
   text-align: center;
   display: inline-block;
+
 }
 /*About-us*/
 .about-us{
@@ -229,6 +233,7 @@ color: var(--basic-black);
  }
  .footer-social-item{
    display: inline-block;
+   background-color: var(--basic-gray);
  }
  .footer-social h3{
   font-weight: bold;
@@ -251,7 +256,7 @@ color: var(--basic-black);
   line-height: 30px;
  }
  .menu{
-   display: block;
+display: block;
 list-style: none;
  }
 .menu-item{
