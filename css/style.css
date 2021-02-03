@@ -255,6 +255,9 @@ color: var(--basic-black);
   font-size: 18px;
   line-height: 30px;
  }
+ .catalog-sort ul{
+   list-style: none;
+ }
  .menu{
 display: block;
 list-style: none;
@@ -263,4 +266,11 @@ list-style: none;
   display: inline-block;
   color: var(--basic-black);
   opacity: 0.3;
+}
+.pagination{
+  display: block;
+}
+.pagination-item{
+  display: inline-block;
+  list-style: none;
 }
