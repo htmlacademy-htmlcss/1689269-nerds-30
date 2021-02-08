@@ -89,6 +89,7 @@ line-height: 18px;
   left: 1020px;
   top: 1014px;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 .red_bg{
   background-color: var(--special-red);
@@ -186,16 +187,24 @@ grid-template-columns: 1fr 2fr ;
 }
 
  /*Servises*/
+.services{
 
+}
 .services-list{
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  /*display: block;*/
   list-style: none;
   padding-inline-start: 0px;
+  gap: 0;
 }
+
 .services-item{
   text-align: center;
-  display: inline-block;
+  /*display: inline-block;*/
   text-align: left;
+
 }
 .services-items h3{
   font-size: 24px;
@@ -249,16 +258,16 @@ color: var(--basic-black);
 }
 /*About-us*/
 .about-us{
+  display: grid;
+  grid-template-columns: 60% 40%;
   display: table;
 }
 .about-us-features{
   display: table-cell;
-  max-width: 50%;
   text-align: left;
 }
 .about-us-advantages{
   display: table-cell;
-  max-width: 50%;
   text-align: center;
 }
 .about-us h3{
@@ -271,20 +280,31 @@ color: var(--basic-black);
 
 }
 .partners-list{
-  display: block;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .partners-item{
-  display: inline-block;
   list-style: none;
 }
  /*Footer-social*/
+ .footer-contacts{
+   background-color: var(--basic-white);
+   padding: 50px;
+ }
+ .footer-social{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   padding: 0, 0;
+   display: grid;
+   grid-template-columns: 25% 75%;
+ }
  .footer-social-list{
    display: block;
  }
  .footer-social-item{
    display: inline-block;
    background-color: var(--basic-gray);
+
  }
  .footer-social h3{
   font-weight: bold;
@@ -319,7 +339,17 @@ color: var(--basic-black);
 
 
 /*Catalog Products*/
+.page-catalog{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+}
+.catalog-products{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 
+}
  .catalog-products img{
    background-color: var(--background-catalog);
  }
@@ -335,10 +365,9 @@ color: var(--basic-black);
    text-align: center;
    position: absolute;
    bottom: 0;
+   color:var(--bottom-catalog) ;
  }
- .catalog-description{
- color:var(--bottom-catalog) ;
- }
+ .catalog-sort{list-style: none;}
  .products-name{
    text-transform: uppercase;
    font-weight: bold;
