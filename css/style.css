@@ -112,51 +112,66 @@ line-height: 18px;
 
 .main-header{
   background-color: var(--light-gray);
+  width: 100%;
+  /*margin:140px;*/
 }
 /*Main navigation*/
 
 .main-navigation{
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin:0 auto ;
+  /*padding: 0 10px;*/
   font-size: 16px;
   line-height: 30px;
   background-color: transparent;
   font-style: normal;
-  display:block;
+  /*display:block;*/
+  /*padding-left: 140px;
+  padding-right:140px;*/
+  margin:0;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 .main-header-bar{
   background-color: var(--light-gray);
-  display: grid;
-  width: 1160px;
+
 }
-.main-navigation-wrapper{
-  /*width: 1160px;*/
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  margin:0 auto ;
-  padding: 0 10px;
-}
+
 
 /*Nav-items*/
 .main-header-logo{
-  display: grid;
-  display: inline-block;
+  display:flex;
+  flex-grow: 1;
+  /*display: inline-block;*/
 }
 .nav-items{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  flex-flow: row nowrap;
   margin: 0;
   padding: 0;
-  display: grid;
+  /*display: grid;*/
   font-style: normal;
-  display: inline-block;
+  /*display: inline-block;*/
+}
+.nav-items li{
+  padding-right: 45px;
 }
 .nav-item{
+  /*padding-left: 140px;
+  padding-right:140px;*/
   list-style: none;
-  display: inline-block;
+  /*display: inline-block;*/
   text-transform: uppercase;
 }
 .nav-cart{
-  display: grid;
-  display: inline-block;
+  /*display: inline-block;*/
   text-transform: uppercase;
+  flex-grow: 1;
 }
 .nav-items a,
 .nav-cart a{
@@ -177,7 +192,8 @@ line-height: 18px;
 /*Slider*/
 
 .slider{
-width: 1160px;
+padding-left: 140px;
+padding-right:140px;
 display: grid;
 grid-template-columns: 1fr 2fr ;
 }
@@ -249,9 +265,11 @@ color: var(--basic-black);
 }
 .advantages-list{
   list-style: none;
+  display: flex;
 
 }
 .advantages-item{
+
   text-align: center;
   display: inline-block;
 
@@ -263,6 +281,7 @@ color: var(--basic-black);
   display: table;
 }
 .about-us-features{
+  padding: 0;
   display: table-cell;
   text-align: left;
 }
@@ -323,6 +342,9 @@ color: var(--basic-black);
  /*Catalog*/
  /*Aside*/
  .aside-form{
+   width: 260px;
+   padding: 0;
+   margin: 0;
    color: var(--basic-dark);
  }
  .aside-form p{
@@ -340,15 +362,25 @@ color: var(--basic-black);
 
 
 /*Catalog Products*/
+.main-catalog{
+  /*display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;*/
+}
 .page-catalog{
   display: grid;
   grid-template-columns: 260px 1fr;
   align-content: start;
 }
 .catalog-products{
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  /*display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;*/
 
 }
  .catalog-products img{
@@ -368,14 +400,21 @@ color: var(--basic-black);
    bottom: 0;
    color:var(--bottom-catalog) ;
  }
- .catalog-sort{list-style: none;}
+ .catalog-sort{
+   list-style: none;
+  display: flex;
+
+}
  .products-name{
    text-transform: uppercase;
    font-weight: bold;
    color: var(--basic-black);
  }
  .products-item{
-   margin: 10px;
+   min-height: 618px;
+   width: 358px;
+   margin-left:40px ;
+   margin-bottom: 30px;
    position: relative;
  }
  .products-item:hover .catalog-description{
@@ -385,6 +424,7 @@ color: var(--basic-black);
    display: none;
  }
  .menu{
+margin-left: auto;
 display: block;
 list-style: none;
  }
@@ -393,11 +433,33 @@ list-style: none;
   color: var(--basic-black);
   opacity: 0.3;
 }
-.pagination{
-  display: block;
+.pagination-list{
+  display: flex;
+  justify-content: flex-start;
+  /*text-decoration: none;
+  display: block;*/
   color: var(--basic-black);
 }
 .pagination-item{
+  background-color: var(--light-gray);
+  width: 50px;
+  height: 50px;
   display: inline-block;
   list-style: none;
+  margin-left: 10px;
+   text-align: center;
+
+}
+.pagination-item:nth-child(1){
+  margin-left: 0;}
+.pagination-item:nth-last-child(){
+  background-color: var(--light-gray);
+  width: 260px;
+
+}
+.pagination-item:focus,
+.pagination-item:hover{
+  background-color: var(--basic-white);
+  border: 5px;
+  border-color: var(--light-gray);
 }
