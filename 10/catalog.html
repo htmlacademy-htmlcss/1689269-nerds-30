@@ -46,29 +46,41 @@
       <div class="side-bar">
         <div class="aside-form">
           <form action="get">
-            <ul class="price-range">
+            <fieldset class="price-range">
               <p>Стоимость:</p>
-              <li><input type="range" min="0" max="15000" value="10000" step="1"></li>
-              <li> от<input type="number" max="14999" min="0" value="0"> до <input type="number" max="15000" min="0"
-                  value="15000"> </li>
-            </ul>
-            <ul class="price-grid">
-              <p>Сетка:</p>  
-              <li><input type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
-              <label for="adaptive">Адаптивная</label></li>
-              <li><input type="radio" name="grid" id="fix" value="Фиксированная">
-              <label for="fix">Фиксированная</label></li>
-              <li><input type="radio" name="grid" id="rubber" value="Резиновая">
-              <label for="rubber">Резиновая</label></li>
-            </ul>
-            <ul class="price-features">
+              <ul>
+                <li><input type="range" min="0" max="15000" value="10000" step="1"></li>
+                <li> от<input type="number" max="14999" min="0" value="0"> до <input type="number" max="15000" min="0"
+                    value="15000"> </li>
+              </ul>
+            </fieldset>
+            <fieldset class="price-grid">
+              <p>Сетка:</p> 
+              <ul> 
+                <li>
+                  <input type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" id="fix" value="Фиксированная">
+                  <label for="fix">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" id="rubber" value="Резиновая">
+                  <label for="rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="price-features">
               <p>Особенности:</p>
+              <ul>
               <li><input type="checkbox" name="features" value="Слайдер" checked>Слайдер</li>
               <li><input type="checkbox" name="features" value="Блок преимуществ">Блок преимуществ</li>
               <li><input type="checkbox" name="features" value="Новости" checked>Новости</li>
               <li><input type="checkbox" name="features" value="Галерея">Галерея</li>
               <li><input type="checkbox" name="features" value="Корзина">Корзина</li>
-            </ul>
+              </ul>
+            </fieldset>
             <button class="button" type="submit">Показать</button>
           </form>
         </div>
@@ -76,10 +88,10 @@
       <div class="main-catalog">
         <div class="catalog-sort">
           <span>Сортировать:</span>
-          <ul class="menu">
-            <li class="menu-item"><a href="#">По цене</a></li>
-            <li class="menu-item"><a href="#">По типу</a></li>
-            <li class="menu-item"><a href="#">По названию</a></li>
+          <ul class="sort">
+            <li class="sort-item"><a href="#">По цене</a></li>
+            <li class="sort-item"><a href="#">По типу</a></li>
+            <li class="sort-item"><a href="#">По названию</a></li>
           </ul>
           <ul class="dir">
             <li class="dir-item"><img src="img/icon-up-dir.png" width="11" height="10" alt="Стрелка вверх"></li>

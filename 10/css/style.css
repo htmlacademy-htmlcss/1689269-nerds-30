@@ -331,11 +331,11 @@ color: var(--basic-black);
    grid-template-columns: 25% 75%;
  }
  .footer-social-list{
-   display: block;
+   display: flex;
    padding: 0;
  }
  .footer-social-item{
-   display: inline-block;
+   list-style: none;
    background-color: var(--basic-gray);
 
  }
@@ -378,7 +378,9 @@ list-style: none;
    list-style: none;
    color: var(--basic-black);
  }
- .dir{list-style: none;}
+ .dir{
+   list-style: none;
+   display: flex;}
 
 
 /*Catalog Products*/
@@ -444,13 +446,12 @@ list-style: none;
  .products-item .catalog-description{
    display: none;
  }
- .menu{
+ .sort{
 margin-left: auto;
-display: block;
+display: flex;
 list-style: none;
  }
-.menu-item{
-  display: inline-block;
+.sort-item{
   color: var(--basic-black);
   opacity: 0.3;
 }
@@ -486,4 +487,7 @@ list-style: none;
   border-color: var(--light-gray);
   width: 43px;
   height: 43px;
+}
+fieldset{
+  border:0 none;
 }
