@@ -20,21 +20,21 @@
 <body class="page-body">
   <header class="main-header">
     <div class="main-header-bar">
-        <nav class="main-navigation">
-          <a class="main-header-logo">
-            <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Лого Нердс">
-          </a>
-          <ul class="nav-items">
-            <li class="nav-item"> <a href="blank.html">Студия</a></li>
-            <li class="nav-item"> <a href="blank.html">Клиенты</a></li>
-            <li class="nav-item"> <a href="catalog.html">Магазин</a></li>
-            <li class="nav-item"> <a href="blank.html">Контакты</a></li>
-          </ul>
-          <div class="nav-cart">
-            <a class="cart-link" href="blank.html">Корзина</a>
-          </div>
-        </nav>
-      </div>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Лого Нердс">
+        </a>
+        <ul class="nav-items">
+          <li class="nav-item active-menu"> <a href="blank.html">Студия</a></li>
+          <li class="nav-item"> <a href="blank.html">Клиенты</a></li>
+          <li class="nav-item"><a  href="catalog.html">Магазин</a></li>
+          <li class="nav-item"> <a href="blank.html">Контакты</a></li>
+        </ul>
+        <div class="nav-cart">
+          <a class="cart-link" href="blank.html">Корзина</a>
+        </div>
+      </nav>
+    </div>
     </div>
     <section class="slider">
       <div class="slider-text">
@@ -112,7 +112,7 @@
       <ul class="partners-list">
         <li class="partners-item"><a href="https://htmlacademy.ru/study"> <img src="img/htmlacademy.png" width="199"
               height="67.82" alt="HTML Academy"></a></li>
-        <li class="partners-item"><img src="img/borodinski.svg" width="199" height="67.82" alt="Borodinski"></li>
+        <li class="partners-item"> <a href="#"></a><img src="img/borodinski.svg" width="199" height="67.82" alt="Borodinski"></li>
         <li class="partners-item"><img src="img/pink.png" width="199" height="67.82" alt="Pink"></li>
         <li class="partners-item"><img src="img/mishka.png" width="199" height="67.82" alt="Mishka"></li>
       </ul>
@@ -120,17 +120,17 @@
   </main>
   <footer class="footer">
     <section class="contacts">
-      <img src="img/map 1.png" width="1440" height="416" alt="карта">
-      <img src="img/map-marker 1.png" width="231" height="190">
+      <img class="map" src="img/map 1.png" width="1440" height="416" alt="карта">
+      <img class="map-marker" src="img/map-marker 1.png" width="231" height="190">
       <div class="footer-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <h3>NЁRDS DESIGN STUDIO</h3>
         <address class="footer-address">
-          191186, Санкт-Петербург,
+          191186, Санкт-Петербург,<br>
           ул. Б.Конюшенная, д.19/8
         </address>
         <p>
-          <a class="contacts-phone" href="tel:+7(812)275-75-75"> +7(812)275-75-75 </a>
+          <a class="contacts-phone" href="tel:+7(812)275-75-75">тел. +7(812)275-75-75 </a>
         </p>
         <button class="button red_bg" type="button">Напишите нам</button>
     </section>
@@ -159,19 +159,26 @@
 </body>
 <section class="contact-with-us">
   <h2>Напишите нам</h2>
-  <p>Ваше имя:</p>
-  <form class="login-form" action="https://htmlacademy.ru/study" method="POST">
-    <label for="login-login"></label>
-    <input class="logo-user" id="login-login" type="text" name="name-user" placeholder="Имя Фамилия">
-    <p>Ваш email:</p>
-    <form class="login-email" action="https://htmlacademy.ru/study" method="POST">
-      <label for="login-email"></label>
+  <form action="https://htmlacademy.ru/study" method="POST">
+    <div class="popup-list">
+      <div class="popup one">
+        <label>Ваше имя:</label>
+        <input class="logo-user" id="login-login" type="text" name="name-user" placeholder="Имя Фамилия">
+      </div>
+      <div class="popup two">
+      <label>Ваш email:</label>
       <input class="logo-user" id="login-email" type="email" name="email-user" placeholder="email@example.com">
-      <p>Текст письма:</p>
-      <form class="login-text" action="https://htmlacademy.ru/study" method="POST">
-        <label for="text"></label>
-        <input class="text-user" id="login-text" type="text" name="text" placeholder="В свободной форме">
-        <button class="button red_bg" type="button">Отправить</button>
-      </form>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="popup three">
+        <label>Текст письма:</label>
+        <textarea class="text-user" placeholder="В свободной форме" cols="10" rows="10" id="login-text"
+          name="text"></textarea>
+      </div>
+    </div>
+    <button class="popup-button" type="button">Отправить</button>
+
+  </form>
 
 </html>
