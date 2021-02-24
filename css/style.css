@@ -226,7 +226,7 @@ top: 6px;
 right:210px;
 width: 15px;
 height: 15px;
-background-image: url("/img/cart-icon.svg");
+background-image: url("../img/cart-icon.svg");
 background-repeat: no-repeat;
 background-position: 0 0;
 }
@@ -289,11 +289,16 @@ padding-bottom: 80px;
   text-align: left;
 
 }
-.services-items h3{
+.services-list h3{
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
 }
 
+.services-list p{
+  margin:0;
+  padding-bottom: 40px;
+}
 
 /*Main*/
 .footer{
@@ -361,7 +366,6 @@ color: var(--basic-black);
 
 }
 .advantages-item{
-
   text-align: left;
   display: inline-block;
 
@@ -400,6 +404,7 @@ color: var(--basic-black);
   text-align: center;
 }
 .about-us-advantages p{
+
   font-weight: 700;
   text-align: center;
   font-size: 16px;
@@ -407,6 +412,13 @@ color: var(--basic-black);
   margin: 0;
   padding-top: 10px;
   padding-bottom: 40px;
+}
+.advantages{
+  text-transform: uppercase;
+}
+.advantages-item li{
+  padding: 0;
+  margin: 0;
 }
 .advantages-list p{
   font-weight: 400;
@@ -465,9 +477,16 @@ color: var(--basic-black);
   list-style: none;
 
 }
-.partners-item a:hover,
-.partners-item a:focus{
-  color: #000000;
+.partners-item img{
+   opacity: 0.2;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.partners-item img:hover,
+.partners-item img:focus{
+  opacity: 1;
+}
+.partners-item img:active{
+   opacity: 0.1;
 }
 
  /*Footer-social*/
@@ -530,7 +549,7 @@ color: var(--basic-black);
 .map-marker{
   position: absolute;
   display: block;
-  top:1958px;
+  top:1998px;
   left: 822px;
 }
 .footer-address{
@@ -547,7 +566,7 @@ color: var(--basic-black);
   position: absolute;
   display: block;
   left: 140px;
-  top: 1925px;
+  top: 1963px;
 }
  /*Catalog*/
 
@@ -702,6 +721,42 @@ list-style: none;
   grid-template-columns: 260px 1fr;
   /*align-content: start;*/
 }
+/*.checkbox  label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}*/
+.checkbox-item{
+  position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.checkbox-item + label{
+  position: relative;
+	padding: 0 0 0 60px;
+	cursor: pointer;
+
+}
+.checkbox-item + label::before{
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4D4D4D;
+}
+.checkbox-item:checked + label{
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -38px;
+  width: 16px;
+  height: 16px;
+  background-image: url(/img/Shape.png)
+}
 .catalog-products{
   display: flex;
   flex-wrap: wrap;
@@ -845,6 +900,7 @@ border-radius: 3px;
 
 .popup-list{
   display: flex;
+  justify-content: space-between;
 }
 .popup-button{
   padding: 15px 40px;
