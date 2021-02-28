@@ -71,32 +71,32 @@
               <legend>Сетка:</legend>
               <ul>
                 <li>
-                  <input type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
+                  <input class="visually-hidden" type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
                   <label for="adaptive">Адаптивная</label>
                 </li>
                 <li>
-                  <input type="radio" name="grid" id="fix" value="Фиксированная">
+                  <input class="visually-hidden" type="radio" name="grid" id="fix" value="Фиксированная">
                   <label for="fix">Фиксированная</label>
                 </li>
                 <li>
-                  <input type="radio" name="grid" id="rubber" value="Резиновая">
+                  <input  class="visually-hidden" type="radio" name="grid" id="rubber" value="Резиновая">
                   <label for="rubber">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="price-features">
               <legend>Особенности:</legend>
-              <ul class="checkbox">
-                <li><input type="checkbox-item" value="features" name="Слайдер" checked>
-                  <label for="Слaйдер">Слайдер</label></li>
-                <li><input type="checkbox-item" value="features" name="Блок преимуществ">
-                  <label for="Блок преимуществ">Блок преимуществ</label></li>
-                <li><input type="checkbox-item" value="features" name="Новости" checked>
-                  <label for="Новости">Новости</label></li>
-                <li><input type="checkbox-item" value="features" name="Галерея">
-                  <label for="Галерея">Галерея</label></li>
-                <li><input type="checkbox-item" value="features" name="Корзина">
-                  <label for="Корзина">Корзина</label></li>
+              <ul class="checkbox-list">
+                <li><input class="visually-hidden" type="checkbox" value="features" name="Слайдер" checked id="slider">
+                  <label for="slider">Слайдер</label></li>
+                <li><input class="visually-hidden" type="checkbox" value="features" name="Блок преимуществ" id="advantage">
+                  <label for="advantage">Блок преимуществ</label></li>
+                <li><input class="visually-hidden" type="checkbox" value="features" name="Новости" checked id="news">
+                  <label for="news">Новости</label></li>
+                <li><input class="visually-hidden" type="checkbox" value="features" name="Галерея" id="gallery">
+                  <label for="gallery">Галерея</label></li>
+                <li><input class="visually-hidden" type="checkbox" value="features" name="Корзина" id="cart">
+                  <label for="cart">Корзина</label></li>
               </ul>
             </fieldset>
             <button class="button-form" type="submit">Показать</button>
@@ -123,7 +123,7 @@
               <img src="img/catalog/catalog1.png" width="358" height="578" alt="Седона">
               <div class="catalog-description"><a href="#" class="products-name">SEDONA</a>
                 <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog"> 9900&#8381 </a>
+                <a href="#" class="button-catalog"> 9&nbsp;900&nbsp;<span>&#8381</span> </a>
               </div>
             </a>
           </section>
@@ -135,7 +135,7 @@
               </div>
               <div class="catalog-description"><a href="#" class="products-name">PINK APP</a>
                 <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9900<span>&#8381;</span></a>
+                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
               </div>
             </a>
           </section>
@@ -147,7 +147,7 @@
               </div>
               <div class="catalog-description"><a href="#" class="products-name">BARBERSHOP</a>
                 <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9900<span>&#8381;</span></a>
+                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
               </div>
             </a>
           </section>
@@ -159,7 +159,7 @@
               </div>
               <div class="catalog-description"><a href="#" class="products-name">MISHKA</a>
                 <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9900<span>&#8381;</span></a>
+                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
               </div>
             </a>
           </section>
@@ -171,7 +171,7 @@
               </div>
               <div class="catalog-description"><a href="#" class="products-name">A PLUS</a>
                 <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9900<span>&#8381;</span></a>
+                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
               </div>
             </a>
           </section>
@@ -183,7 +183,7 @@
               </div>
               <div class="catalog-description"><a href="#" class="products-name">КВАСТ</a>
                 <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9900<span>&#8381;</span></a>
+                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
               </div>
             </a>
           </section>
@@ -201,8 +201,8 @@
   </main>
   <footer class="footer">
     <section class="contacts">
-      <img src="img/map 1.png" width="1440" height="416" alt="карта">
-      <img src="img/map-marker 1.png" width="231" height="190">
+      <img class="map catalog" src="img/map 1.png" width="1440" height="416" alt="карта">
+      <img class="map-marker" src="img/map-marker 1.png" width="231" height="190">
       <div class="footer-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <h3>NЁRDS DESIGN STUDIO</h3>
