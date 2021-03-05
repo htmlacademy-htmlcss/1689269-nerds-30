@@ -207,6 +207,7 @@ opacity:0.3;
 }
 .nav-items{
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 2;
   flex-flow: row wrap;
   margin: 0;
@@ -851,6 +852,7 @@ font-size: 16px;
    bottom: 0;
    color:var(--bottom-catalog);
    padding-top: 33px;
+   /* word-break: break-all; */
 
  }
  .catalog-sort{
@@ -974,17 +976,51 @@ fieldset{
 
 
 .contact-with-us{
+  position: relative;
+  position: fixed;
   background-color: var(--basic-white);
+  background-position: 0 0;
   padding: 80px 100px;
   width: 760px;
   height: 434px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .popap p{
   font-weight: 700;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 18px;}
 
+.modal-close{
+  width: 21px;
+  height: 21px;
+  border: 0;
+  cursor: pointer;
+  top:78px;
+  right: 90px;
+  left: 849px;
+  bottom: 490px;
+  background-color: #FFFFFF;
+  /* background-image: url(/img/Vector.svg); */
+  position: absolute;
+}
+.modal-close::before,
+.modal-close::after{
+  content: "";
+  position: absolute;
+  top:10px;
+  left: 1px;
+  width: 21px;
+height: 3px;
+background-color: #FB565A;
+opacity: 0.3;
+border-radius: 3px;
+}
+.modal-close::before{
+  transform: rotate(45deg);
+}
+.modal-close::after{
+  transform: rotate(-45deg);
 }
 .logo-user{
   width: 360px;
