@@ -57,16 +57,16 @@
                   <div class="toggle toggle-min" tabindex="0" style="left:20%;"></div>
                   <div class="toggle toggle-max" tabindex="0" style="left:50%;""></div>
                 </div>
-                <div class="price-controls">
-                  <label class="min-price">
-                    от <input class="number" name="min-price" value="0">
-                  </label>
-                  <label class="max-price">
-                  до <input class="number" name="max-price" value="15000">
-                  </input>
-                </label>
+                <div class=" price-controls">
+                    <label class="min-price">
+                      от <input class="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input class="number" name="max-price" value="15000">
+                      </input>
+                    </label>
+                  </div>
                 </div>
-              </div>
             </fieldset>
             <fieldset class="price-grid">
               <legend>Сетка:</legend>
@@ -80,7 +80,7 @@
                   <label for="fix">Фиксированная</label>
                 </li>
                 <li>
-                  <input  class="visually-hidden" type="radio" name="grid" id="rubber" value="Резиновая">
+                  <input class="visually-hidden" type="radio" name="grid" id="rubber" value="Резиновая">
                   <label for="rubber">Резиновая</label>
                 </li>
               </ul>
@@ -88,16 +88,22 @@
             <fieldset class="price-features">
               <legend>Особенности:</legend>
               <ul class="checkbox-list">
-                <li><input class="visually-hidden" type="checkbox" value="features" name="Слайдер" checked id="slider">
-                  <label for="slider">Слайдер</label></li>
-                <li><input class="visually-hidden" type="checkbox" value="features" name="Блок преимуществ" id="advantage">
-                  <label for="advantage">Блок преимуществ</label></li>
-                <li><input class="visually-hidden" type="checkbox" value="features" name="Новости" checked id="news">
-                  <label for="news">Новости</label></li>
+                <li><input class="visually-hidden" type="checkbox" value="features" name="Слайдер" checked id="slider" checked>
+                  <label for="slider">Слайдер</label>
+                </li>
+                <li><input class="visually-hidden" type="checkbox" value="features" name="Блок преимуществ"
+                    id="advantage">
+                  <label for="advantage">Блок преимуществ</label>
+                </li>
+                <li><input class="visually-hidden" type="checkbox" value="features" name="Новости" checked id="news" checked>
+                  <label for="news">Новости</label>
+                </li>
                 <li><input class="visually-hidden" type="checkbox" value="features" name="Галерея" id="gallery">
-                  <label for="gallery">Галерея</label></li>
+                  <label for="gallery">Галерея</label>
+                </li>
                 <li><input class="visually-hidden" type="checkbox" value="features" name="Корзина" id="cart">
-                  <label for="cart">Корзина</label></li>
+                  <label for="cart">Корзина</label>
+                </li>
               </ul>
             </fieldset>
             <button class="button-form" type="submit">Показать</button>
@@ -119,68 +125,56 @@
         </div>
         <section class="catalog-products">
           <section class="products-item">
-            <a href="#">
-              <img src="img/catalog/catalog1.png" width="358" height="578" alt="Седона">
-              <div class="catalog-description"><a href="#" class="products-name">SEDONA</a>
-                <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog"> 9&nbsp;900&nbsp;<span>&#8381</span> </a>
-              </div>
-            </a>
+            <img src="img/catalog/catalog1.png" width="358" height="578" alt="Седона">
+            <div class="catalog-description"><a href="#" class="products-name">SEDONA</a>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" class="button-catalog"> 9&nbsp;900&nbsp;<span>&#8381</span> </a>
+            </div>
           </section>
           <section class="products-item">
-            <a href="#">
-              <div>
-                <img src="img/img-pink 1.png" width="358" height="578" alt="Пинк эп">
-              </div>
-              <div class="catalog-description"><a href="#" class="products-name">PINK APP</a>
-                <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
-              </div>
-            </a>
+            <div>
+              <img src="img/img-pink 1.png" width="358" height="578" alt="Пинк эп">
+            </div>
+            <div class="catalog-description"><a href="#" class="products-name">PINK APP</a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
+            </div>
           </section>
           <section class="products-item">
-            <a href="#">
-              <div>
-                <img src="img/img-barbershop 1.png" width="358" height="578" alt="Барбершоп">
-              </div>
-              <div class="catalog-description"><a href="#" class="products-name">BARBERSHOP</a>
-                <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
-              </div>
-            </a>
+            <div>
+              <img src="img/img-barbershop 1.png" width="358" height="578" alt="Барбершоп">
+            </div>
+            <div class="catalog-description"><a href="#" class="products-name">BARBERSHOP</a>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
+            </div>
           </section>
           <section class="products-item">
-            <a href="#">
-              <div>
-                <img src="img/img-mishka 1.png" width="358" height="578" alt="Мишка">
-              </div>
-              <div class="catalog-description"><a href="#" class="products-name">MISHKA</a>
-                <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
-              </div>
-            </a>
+            <div>
+              <img src="img/img-mishka 1.png" width="358" height="578" alt="Мишка">
+            </div>
+            <div class="catalog-description"><a href="#" class="products-name">MISHKA</a>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
+            </div>
           </section>
           <section class="products-item">
-            <a href="#">
-              <div>
-                <img src="img/img-aplus 1.png" width="358" height="578" alt="Эй плас">
-              </div>
-              <div class="catalog-description"><a href="#" class="products-name">A PLUS</a>
-                <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
-              </div>
-            </a>
+            <div>
+              <img src="img/img-aplus 1.png" width="358" height="578" alt="Эй плас">
+            </div>
+            <div class="catalog-description"><a href="#" class="products-name">A PLUS</a>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
+            </div>
           </section>
           <section class="products-item">
-            <a href="#">
-              <div>
-                <img src="img/img-kvast 1.png" width="358" height="578" alt="Кваст">
-              </div>
-              <div class="catalog-description"><a href="#" class="products-name">КВАСТ</a>
-                <p>Информационный сайт для туристов</p>
-                <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
-              </div>
-            </a>
+            <div>
+              <img src="img/img-kvast 1.png" width="358" height="578" alt="Кваст">
+            </div>
+            <div class="catalog-description"><a href="#" class="products-name">КВАСТ</a>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
+            </div>
           </section>
         </section>
         <div class="pagination">
