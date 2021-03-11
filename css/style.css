@@ -137,7 +137,7 @@ img {
   border-radius: 3px;
 }
 .button-catalog:hover,
-button-catalog:focus {
+.button-catalog:focus {
   background-color: #e74246;
 }
 .button-catalog:active {
