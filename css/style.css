@@ -1,5 +1,3 @@
-/*Fonts*/
-
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/roboto.woff2) format(woff2),
@@ -137,7 +135,7 @@ img {
   border-radius: 3px;
 }
 .button-catalog:hover,
-.button-catalog:focus {
+button-catalog:focus {
   background-color: #e74246;
 }
 .button-catalog:active {
@@ -971,7 +969,7 @@ fieldset legend {
 .products-item .catalog-description {
   display: none;
 }
-.products-item::after {
+.products-item::after{
   content: "";
   background-image: url(../img/browser.svg);
   position: absolute;
@@ -980,13 +978,13 @@ fieldset legend {
   width: 360px;
   height: 40px;
   opacity: 0.12;
-  border-radius: 3px;
+  border-radius:3px;
 }
-.products-item:hover::after {
+.products-item:hover::after{
   opacity: 1;
 }
 .products-item::after:hover,
-.products-item::after:focus {
+.products-item::after:focus{
   opacity: 1;
 }
 .sort {
