@@ -19,11 +19,12 @@
 
 <body class="page-body">
   <header class="main-header">
+    <div class="main-header-main">
     <div class="main-header-bar">
       <div class="main-navigation-wrapper">
         <nav class="main-navigation">
           <a href="index.html" class="main-header-logo">
-            <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Лого Нердс">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Лого Нердс">
           </a>
           <ul class="nav-items">
             <li class="nav-item"> <a href="blank.html">Студия</a></li>
@@ -38,6 +39,7 @@
       </div>
     </div>
     <h1 class="catalog-text">Магазин готовых шаблонов</h1>
+  </div>
   </header>
   <main class="container">
     <div class="page-catalog">
@@ -91,7 +93,7 @@
                   <label for="slider">Слайдер</label>
                 </li>
                 <li><input class="visually-hidden" type="checkbox" value="features" name="Блок преимуществ"
-                    id="advantage">
+                    id="advantage" disabled>
                   <label for="advantage">Блок преимуществ</label>
                 </li>
                 <li><input class="visually-hidden" type="checkbox" value="features" name="Новости" checked id="news" checked>
@@ -123,14 +125,14 @@
           </ul>
         </div>
         <section class="catalog-products">
-          <section class="products-item">
+          <div class="products-item">
             <img src="img/catalog/catalog1.png" width="358" height="578" alt="Седона">
             <div class="catalog-description"><a href="#" class="products-name">SEDONA</a>
               <p>Информационный сайт для туристов</p>
               <a href="#" class="button-catalog"> 9&nbsp;900&nbsp;<span>&#8381</span> </a>
             </div>
-          </section>
-          <section class="products-item">
+          </div>
+          <div class="products-item">
             <div>
               <img src="img/img-pink 1.png" width="358" height="578" alt="Пинк эп">
             </div>
@@ -138,8 +140,8 @@
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
             </div>
-          </section>
-          <section class="products-item">
+          </div>
+          <div class="products-item">
             <div>
               <img src="img/img-barbershop 1.png" width="358" height="578" alt="Барбершоп">
             </div>
@@ -147,8 +149,8 @@
               <p>Информационный сайт для туристов</p>
               <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
             </div>
-          </section>
-          <section class="products-item">
+          </в>
+          <div class="products-item">
             <div>
               <img src="img/img-mishka 1.png" width="358" height="578" alt="Мишка">
             </div>
@@ -156,8 +158,8 @@
               <p>Информационный сайт для туристов</p>
               <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
             </div>
-          </section>
-          <section class="products-item">
+          </div>
+          <div class="products-item">
             <div>
               <img src="img/img-aplus 1.png" width="358" height="578" alt="Эй плас">
             </div>
@@ -165,8 +167,8 @@
               <p>Информационный сайт для туристов</p>
               <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
             </div>
-          </section>
-          <section class="products-item">
+          </div>
+          <div class="products-item">
             <div>
               <img src="img/img-kvast 1.png" width="358" height="578" alt="Кваст">
             </div>
@@ -174,16 +176,14 @@
               <p>Информационный сайт для туристов</p>
               <a href="#" class="button-catalog">9&nbsp;900&nbsp;<span>&#8381;</span></a>
             </div>
-          </section>
+          </div>
         </section>
-        <div class="pagination">
           <ul class="pagination-list">
             <li class="pagination-item"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
             <li class="pagination-item"><a href="#"> Следующая </a></li>
           </ul>
-        </div>
       </div>
       </section>
   </main>
@@ -223,5 +223,31 @@
     </section>
   </footer>
 </body>
-
+<section class="contact-with-us visually-hidden">
+  <div class="contact-with-us block">
+  <h2>Напишите нам</h2>
+  <action action="https://htmlacademy.ru/study" method="POST">
+    <div class="popup-list">
+      <div class="popup one">
+        <label>Ваше имя:</label>
+        <input class="logo-user" id="login-login" type="text" name="name-user" placeholder="Имя Фамилия">
+      </div>
+      <div class="popup two">
+      <label>Ваш email:</label>
+      <input class="logo-user" id="login-email" type="email" name="email-user" placeholder="email@example.com">
+      </div>
+    </div>
+    <div class="popup">
+      <div class="popup three">
+        <label>Текст письма:</label>
+        <textarea class="text-user" placeholder="В свободной форме" cols="10" rows="10" id="login-text"
+          name="text"></textarea>
+      </div>
+    </div>
+    <button class="popup-button" type="button">Отправить</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</action>
+  </form>
+</div>
+</section>
 </html>
