@@ -698,7 +698,15 @@ button-catalog:focus {
   left: -13px;
   border-radius: 15px;
 }
-
+.price-grid input:checked + label::before,
+.price-grid input:checked + label::after,
+.price-grid input + label::before,
+.price-grid input+ label::after{
+  margin-left: 20px;
+}
+.price-grid input + label{
+  padding-left: 40px;
+}
 .price-grid input:checked + label:hover::after,
 .price-grid input + label:hover::after {
   background-color: #4d4d4d;
@@ -740,7 +748,7 @@ button-catalog:focus {
 /*Checkbox*/
 .price-features input + label {
   position: relative;
-  padding-left: 13px;
+  padding-left: 40px;
 }
 .price-features input + label::before {
   content: "";
@@ -788,6 +796,15 @@ button-catalog:focus {
   top: 0;
   left: -20px;
 }
+
+.price-features input:checked + label::before,
+.price-features input:checked + label::after,
+.price-features input + label::before,
+.price-features input + label::after{
+  margin-left:20px;
+}
+
+
 .price-features label{
 
   color: #283136;
@@ -980,11 +997,9 @@ fieldset legend {
   opacity: 0.12;
   border-radius:3px;
 }
-.products-item:hover::after{
-  opacity: 1;
-}
-.products-item::after:hover,
-.products-item::after:focus{
+
+.products-item:hover::after,
+.products-item:focus::after{
   opacity: 1;
 }
 .sort {
