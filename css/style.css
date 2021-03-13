@@ -284,12 +284,35 @@ button-catalog:focus {
   grid-template-columns: 1fr 2fr;
 }
 .slider-button-item{
-  position: absolute;
-  width: 18px;
+width: 18px;
 height: 18px;
 background-color: var(--basic-white);
 border-radius: 50%;
 top: 300px;
+border: none;
+ outline: none;
+}
+ .slider-button:first-child{position: relative;}
+.slider-button:first-child::before{
+  content: "";
+  position: absolute;
+  width: 8px;
+height: 8px;
+border-radius: 50%;
+border: 2px solid #C1C1C1;
+box-sizing: border-box;
+top: 50%;
+left: 50%;
+}
+.slider-button{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  flex-wrap: wrap;
+  width: 88px;
+  justify-content: space-between;
+  top: 382px;
+  left: 666px;
 }
 /*Servises*/
 .services {
@@ -1129,20 +1152,18 @@ fieldset {
 }
 .contact-with-us{
   background-position: 0 0;
-  width: 770px;
-height: 460px;
+  width: 960px;
+height: 590px;
   position: fixed;
-
   top: 50%;
   left: 50%;
   overflow: auto;
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  padding-left: 100px;
-  padding-right: 90px;
-  padding-top: 65px;
-  padding-bottom: 65px;
-  /* padding: 0 0; */
+padding-left: 100px;
+padding-right: 100px;
+padding-top: 65px;
+padding-bottom: 82px;
   transform: translate(-50%, -50%);
   display: block;
 }
@@ -1162,11 +1183,14 @@ display: block;
 
 
 .popap p {
+
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
 }
-
+.contact-with-us h2r{
+  margin: 0;
+}
 .modal-close {
   width: 21px;
   height: 21px;
@@ -1185,7 +1209,7 @@ display: block;
   content: "";
   position: absolute;
   top: 10px;
-  left: 1px;
+  left: 200px;
   width: 21px;
   height: 3px;
   background-color: #fb565a;
