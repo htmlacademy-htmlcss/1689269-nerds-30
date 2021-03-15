@@ -929,7 +929,9 @@ fieldset legend {
 .dir-item svg path:active {
   fill: #231F20;
 }
-
+.dir-item:first-child svg path{
+  fill:#231F20;
+}
 .catalog-sort {
   text-transform: uppercase;
   display: flex;
@@ -958,6 +960,9 @@ fieldset legend {
   padding-right: 25px;
   font-size: 14px;
   line-height: 18px;
+}
+.sort-item:first-child a{
+  opacity: 1;
 }
 .sort-item a {
   color: var(--basic-black);
@@ -989,6 +994,7 @@ fieldset legend {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  padding-top: 17px;
 }
 .catalog-products img {
   background-color: var(--background-catalog);
@@ -1057,7 +1063,10 @@ fieldset legend {
 .products-item:hover .catalog-description {
   display: block;
 }
-
+.products-item:hover,
+.products-item:focus{
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
 .products-item .catalog-description {
   display: none;
 }
@@ -1175,13 +1184,7 @@ fieldset {
   position: fixed;
   top: 0px;
 }
-/*.block{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-display: block;
-}*/
+
 
 .popap p {
   font-weight: 700;
@@ -1244,20 +1247,27 @@ display: block;
   border-radius: 3px;
   height: 118px;
 }
-.popup .two {
+.popup .two input{
   margin-left: 40px;
 }
+.popup .three{
+  margin-top: 30px;
+}
 
-.popup .three {
+.popup .three textarea{
+  padding:17px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 30px;
+
 }
 
 .popup-list {
   display: flex;
   justify-content: space-between;
+}
+.popup-list input{
+  padding-left: 17px;
 }
 .popup-button {
   padding: 15px 40px;
@@ -1271,6 +1281,7 @@ display: block;
   line-height: 18px;
   background: #fb565a;
   margin-top: 45px;
+  width:259px ;
 }
 .popup label {
   display: flex;
