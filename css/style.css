@@ -902,35 +902,34 @@ fieldset legend {
   padding-top: 75px;
   margin: 0;
 }
-.aside-form {
+.side-bar{
+  padding-right: 100px;
   width: 260px;
   padding: 0;
   margin: 0;
   color: var(--basic-dark);
 }
-
-.aside-form ul {
+.side-bar ul{
   padding: 0;
   list-style: none;
 }
+
 .dir-item {
-  color: var(--basic-black);
-  /* opacity: 0.2; */
+  fill:#ececec;
   padding-top: 44px;
   padding-bottom: 55px;
   padding-left: 18px;
   padding-right: 0;
 }
-.dir-item img:hover,
-.dir-item img:focus {
-  color: #000000;
-  mix-blend-mode: normal;
-  opacity: 0.3;
+.dir-item svg path{fill:#ececec;}
+.dir-item svg path:hover,
+.dir-item svg path:focus {
+  fill: #A6A6A6;
 }
-.dir-item img:active {
-  color: #000000;
-  opacity: 1;
+.dir-item svg path:active {
+  fill: #231F20;
 }
+
 .catalog-sort {
   text-transform: uppercase;
   display: flex;
@@ -953,7 +952,6 @@ fieldset legend {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  flex-direction: row-reverse;
 }
 .sort-item {
   display: flex;
@@ -981,7 +979,7 @@ fieldset legend {
 .page-catalog {
   display: grid;
   grid-template-columns: 260px 1fr;
-  /*align-content: start;*/
+  grid-column-gap: 102px;
 }
 
 /*Catalog-products*/
