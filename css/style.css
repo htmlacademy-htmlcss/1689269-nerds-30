@@ -186,7 +186,7 @@ button-catalog:focus {
 .main-header {
   background-color: var(--light-gray);
   min-width: 100%;
-  padding-top 48px;
+  padding-top: 48px;
 
 }
 .main-header-main {
@@ -338,9 +338,7 @@ button-catalog:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 100px;
-  /*display: block;*/
   list-style: none;
-  padding-inline-start: 0px;
   gap: 0;
 }
 
@@ -576,7 +574,7 @@ button-catalog:focus {
   padding: 0 140px;
   margin-top: 30px;
   margin-bottom: 50px;
-  padding: 0, 0;
+  padding: 0 0;
   display: grid;
   grid-template-columns: 25% 75%;
 }
