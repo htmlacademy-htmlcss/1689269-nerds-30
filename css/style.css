@@ -186,7 +186,8 @@ button-catalog:focus {
 .main-header {
   background-color: var(--light-gray);
   min-width: 100%;
-  /*margin:140px;*/
+  padding-top 48px;
+
 }
 .main-header-main {
   width: 1157px;
@@ -322,8 +323,8 @@ button-catalog:focus {
 /*Servises*/
 .services {
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 .services::after {
   margin-top: 80px;
@@ -384,9 +385,11 @@ button-catalog:focus {
   line-height: 55px;
   font-weight: 500;
 }
-
+.slider-text{
+  width: 400px;
+}
 .slider-text p {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 }
 /*Features*/
 .features-list {
@@ -489,10 +492,14 @@ button-catalog:focus {
   text-align: left;
 }
 .about-us h3 {
+  font-size: 16px;
+  line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
 }
-
+.about-us{
+  padding-bottom: 45px;
+}
 /*Partners*/
 
 .partners-list {
@@ -536,7 +543,7 @@ button-catalog:focus {
 .partners-item {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   list-style: none;
 }
 .partners-item img {
@@ -567,7 +574,7 @@ button-catalog:focus {
 .footer-social {
   width: 1160px;
   padding: 0 140px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
   padding: 0, 0;
   display: grid;
@@ -1046,8 +1053,13 @@ fieldset legend {
 }
 .products-item {
   margin-left: 40px;
-  margin-bottom: 60px;
   position: relative;
+}
+.products-item:nth-child(-n+4){
+  margin-bottom: 60px;
+}
+.products-item:nth-last-of-type(-n+2){
+  margin-bottom: 20px;
 }
 .products-item:not(last-child) {
   padding-bottom: 30px;
@@ -1093,6 +1105,8 @@ fieldset legend {
 }
 
 .pagination-list {
+  margin-top:0px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: flex-start;
   padding: 0;
