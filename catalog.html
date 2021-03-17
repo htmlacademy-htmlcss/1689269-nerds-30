@@ -44,72 +44,71 @@
   <main class="container">
     <div class="page-catalog">
       <div class="side-bar">
-          <form action="get">
-            <fieldset class="filter-item">
-              <legend>Стоимость:</legend>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" style="width:30%;
+        <form action="get">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width:30%;
                     margin-left:20%;">
-                    </div>
-                  </div>
-                  <div class="toggle toggle-min" tabindex="0" style="left:20%;"></div>
-                  <div class="toggle toggle-max" tabindex="0" style="left:50%;""></div>
-                </div>
-                <div class=" price-controls">
-                    <label class="min-price">
-                      от <input class="number" name="min-price" value="0">
-                    </label>
-                    <label class="max-price">
-                      до <input class="number" name="max-price" value="15000">
-                      </input>
-                    </label>
                   </div>
                 </div>
-            </fieldset>
-            <fieldset class="price-grid">
-              <legend>Сетка:</legend>
-              <ul>
-                <li>
-                  <input class="visually-hidden" type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
-                  <label for="adaptive">Адаптивная</label>
-                </li>
-                <li>
-                  <input class="visually-hidden" type="radio" name="grid" id="fix" value="Фиксированная">
-                  <label for="fix">Фиксированная</label>
-                </li>
-                <li>
-                  <input class="visually-hidden" type="radio" name="grid" id="rubber" value="Резиновая">
-                  <label for="rubber">Резиновая</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="price-features">
-              <legend>Особенности:</legend>
-              <ul class="checkbox-list">
-                <li><input class="visually-hidden" type="checkbox" value="features" name="Слайдер" checked id="slider"
-                    checked>
-                  <label for="slider">Слайдер</label>
-                </li>
-                <li><input class="visually-hidden" type="checkbox" value="features" name="Блок преимуществ"
-                    id="advantage" disabled>
-                  <label for="advantage">Блок преимуществ</label>
-                </li>
-                <li><input class="visually-hidden" type="checkbox" value="features" name="Новости" checked id="news"
-                    checked>
-                  <label for="news">Новости</label>
-                </li>
-                <li><input class="visually-hidden" type="checkbox" value="features" name="Галерея" id="gallery">
-                  <label for="gallery">Галерея</label>
-                </li>
-                <li><input class="visually-hidden" type="checkbox" value="features" name="Корзина" id="cart">
-                  <label for="cart">Корзина</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button-form" type="submit">Показать</button>
-          </form>
+                <div class="toggle toggle-min" tabindex="0" style="left:20%;"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left:50%;"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input class="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input class="number" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="price-grid">
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden" type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="radio" name="grid" id="fix" value="Фиксированная">
+                <label for="fix">Фиксированная</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="radio" name="grid" id="rubber" value="Резиновая">
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="price-features">
+            <legend>Особенности:</legend>
+            <ul class="checkbox-list">
+              <li><input class="visually-hidden" type="checkbox" value="features" name="Слайдер" checked id="slider"
+                  checked>
+                <label for="slider">Слайдер</label>
+              </li>
+              <li><input class="visually-hidden" type="checkbox" value="features" name="Блок преимуществ" id="advantage"
+                  disabled>
+                <label for="advantage">Блок преимуществ</label>
+              </li>
+              <li><input class="visually-hidden" type="checkbox" value="features" name="Новости" checked id="news"
+                  checked>
+                <label for="news">Новости</label>
+              </li>
+              <li><input class="visually-hidden" type="checkbox" value="features" name="Галерея" id="gallery">
+                <label for="gallery">Галерея</label>
+              </li>
+              <li><input class="visually-hidden" type="checkbox" value="features" name="Корзина" id="cart">
+                <label for="cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button-form" type="submit">Показать</button>
+        </form>
       </div>
       <div class="main-catalog">
         <div class="catalog-sort">
@@ -122,14 +121,14 @@
           <ul class="dir">
             <li class="dir-item">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11"/>
+                <path d="M5.5 10L0 0H11" />
               </svg>
             </li>
             <li class="dir-item">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z"/>
-                </svg>
-                </li>
+                <path d="M5.5 0L0 10H11L5.5 0Z" />
+              </svg>
+            </li>
           </ul>
         </div>
         <section class="catalog-products">
@@ -137,7 +136,7 @@
             <img src="img/catalog/catalog1.png" width="358" height="578" alt="Седона">
             <div class="catalog-description"><a href="#" class="products-name">SEDONA</a>
               <p>Информационный сайт для туристов</p>
-              <a href="#" class="button-catalog"> 9&nbsp;900&nbsp;<span>&#8381</span> </a>
+              <a href="#" class="button-catalog"> 9&nbsp;900&nbsp;<span> &#8381; </span> </a>
             </div>
           </div>
           <div class="products-item">
@@ -183,12 +182,13 @@
           <li class="pagination-item"><a href="#"> Следующая </a></li>
         </ul>
       </div>
-      </section>
+    </div>
+
   </main>
   <footer class="footer">
     <section class="contacts">
       <img class="map catalog" src="img/map1.png" width="1440" height="416" alt="карта">
-      <img class="map-marker" src="img/map-marker1.png" width="231" height="190">
+      <img class="map-marker" src="img/map-marker1.png" width="231" height="190" alt="отметка на карте">
       <div class="footer-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <h3>NЁRDS DESIGN STUDIO</h3>
@@ -200,18 +200,19 @@
           <a class="contacts-phone" href="tel:+7(812)275-75-75"> +7(812)275-75-75 </a>
         </p>
         <button class="button red_bg" type="button">Напишите нам</button>
+      </div>
     </section>
-    </div>
+
     <section class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a href="#"><img src="img/vk-icon.png"></a>
+          <a href="#"><img src="img/vk-icon.png" alt="Вконтакте"></a>
         </li>
         <li class="footer-social-item">
-          <a href="#"><img src="img/fb-icon.png"></a>
+          <a href="#"><img src="img/fb-icon.png" alt="Фейсбук"></a>
         </li>
         <li class="footer-social-item">
-          <a href="#"><img src="img/insta-icon.png"></a>
+          <a href="#"><img src="img/insta-icon.png" alt="Инстаграм"></a>
         </li>
       </ul>
       <div class="footer-social-text">
@@ -224,7 +225,7 @@
 <section class="contact-with-us visually-hidden">
   <div class="contact-with-us block">
     <h2>Напишите нам</h2>
-    <action action="https://htmlacademy.ru/study" method="POST">
+    <form action="https://htmlacademy.ru/study" method="POST">
       <div class="popup-list">
         <div class="popup one">
           <label>Ваше имя:</label>
@@ -244,7 +245,6 @@
       </div>
       <button class="popup-button" type="button">Отправить</button>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    </action>
     </form>
   </div>
 </section>
